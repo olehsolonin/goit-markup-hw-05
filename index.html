@@ -400,6 +400,58 @@
 
 		</div>
 	</footer>
+	<div class="backdrop is-open">
+		<div class="modal">
+			<button type="button" class="modal-close-btn">
+				<svg class="modal-close-icon" width="8" height="8">
+					<use href="./images/icons.svg#icon-close-icon"></use>
+				</svg>
+			</button>
+			<p class="modal-text">Leave your contacts and we will call you back</p>
+			<div class="modal-form">
+
+				<form name="feedback_form" autocomplete="on" class="feedback-form">
+
+					<label class="label-modal">
+						Name
+						<input type="text" name="username" class="input-block">
+					</label>
+
+
+					<label class="label-modal">
+						Phone
+						<input type="tel" name="tel-input" class="input-block">
+					</label>
+
+
+					<label class="label-modal">
+						Email
+						<input type="email" name="email" class="input-block">
+					</label>
+
+
+					<label class="label-modal">
+						Comment
+						<textarea name="description" rows="5" placeholder="Text input" class="comment-area">
+						</textarea>
+					</label>
+
+
+				</form>
+				<form name="accept-form">
+					<label class="accept-label">
+						<input type="checkbox" name="accept" value="True" class="accept-input" />
+						I accept the terms and conditions of the <span><a href="">Privacy Policy</a></span>
+					</label>
+				</form>
+				<div class="button-area">
+					<button type="submit" class="send-btn">
+						Send
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
