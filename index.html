@@ -400,7 +400,7 @@
 
 		</div>
 	</footer>
-	<div class="backdrop is-open">
+	<div class="backdrop">
 		<div class="modal">
 			<button type="button" class="modal-close-btn">
 				<svg class="modal-close-icon" width="8" height="8">
@@ -408,48 +408,71 @@
 				</svg>
 			</button>
 			<p class="modal-text">Leave your contacts and we will call you back</p>
-			<div class="modal-form">
-
-				<form name="feedback_form" autocomplete="on" class="feedback-form">
-
-					<label class="label-modal">
-						Name
-						<input type="text" name="username" class="input-block">
-					</label>
-
+			<form autocomplete="on" class="feedback-form">
+				<div class="modal-form">
 
 					<label class="label-modal">
-						Phone
-						<input type="tel" name="tel-input" class="input-block">
+						<span class="label-text">Name</span>
+						<div class="modal-input-wrap">
+							<input type="text" name="username" class="input-block" autofocus>
+							<svg class="input-icon" width="18" height="18">
+								<use href="./images/icons.svg#icon-person-black"></use>
+							</svg>
+						</div>
 					</label>
 
 
 					<label class="label-modal">
-						Email
-						<input type="email" name="email" class="input-block">
+						<span class="label-text">Phone</span>
+						<div class="modal-input-wrap">
+							<input type="tel" name="tel-input" class="input-block">
+							<svg class="input-icon" width="18" height="24">
+								<use href="./images/icons.svg#icon-phone-black"></use>
+							</svg>
+						</div>
 					</label>
 
 
 					<label class="label-modal">
-						Comment
-						<textarea name="description" rows="5" placeholder="Text input" class="comment-area">
-						</textarea>
+						<span class="label-text">Email</span>
+						<div class="modal-input-wrap">
+							<input type="email" name="email" class="input-block">
+							<svg class="input-icon" width="18" height="24">
+								<use href="./images/icons.svg#icon-email-black"></use>
+							</svg>
+						</div>
 					</label>
 
 
-				</form>
-				<form name="accept-form">
-					<label class="accept-label">
-						<input type="checkbox" name="accept" value="True" class="accept-input" />
-						I accept the terms and conditions of the <span><a href="">Privacy Policy</a></span>
+					<label class="label-modal label-modification">
+						<span class="label-text">Comment</span>
+						<textarea name="description" placeholder="Text input" class="input-block comment-area"></textarea>
 					</label>
-				</form>
+				</div>
+
+
+				<div class="accept-div">
+
+					<input type="checkbox" name="accept" value="True" class="accept-input visually-hidden"
+						id="policy-accept" />
+					<label class="accept-label" for="policy-accept"><span>
+							<svg class="accept-vector" width="10" height="8">
+								<use href="./images/icons.svg#icon-vector"></use>
+							</svg>
+						</span>I accept the terms and conditions of the
+						<a href="" class="accept-link">Privacy Policy</a>
+					</label>
+
+				</div>
+
+
 				<div class="button-area">
 					<button type="submit" class="send-btn">
-						Send
+						<span class="button-text">Send</span>
 					</button>
+
 				</div>
-			</div>
+			</form>
 		</div>
 	</div>
 </body>
